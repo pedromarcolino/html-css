@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+   <form action="cadastro.php" autocomplete="off" method="post">
+        <!--
+         input:text = caixa de texto
+         input:submit = enviar
+         form action="cadastro.php" = enviar o formulário para outra linguagem
+         input name = mais útil para HTML E PHP
+         input id = mais útil para JS E LABEL
+         label = relaciona com a caixa 
+         method post = quando os dados são sensíveis, exemplos: senhas, endereço, CEP ( os dados não ficam na minha URL, mas podem ser acessados, de certa forma, protege os dados mais o menos ), se meus dados passar de 3000 bites, eu tenho que usar o post, e serve para envio de arquivos 
+         method get (só posso enviar ate 3000 bites, ou seja, aproximadamente, 3000 letras)= quando os dados não são sensíveis, exemplos: idade, nome,sobrenome, usada para minha URL ser compartilhada, 
+        -->
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobreno" id="isobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+   </form>
+</body>
+</html>

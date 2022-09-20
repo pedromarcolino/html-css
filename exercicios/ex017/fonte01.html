@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in(polegadas), px, pt, pc
+            
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+
+            */
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+            /* lighter normal bold bolder */
+        }
+
+        h1 {
+
+            /* shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif
+
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus id eius expedita autem voluptatibus itaque ipsa quasi explicabo totam? Maiores vel reprehenderit provident libero porro voluptatem perspiciatis reiciendis natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, maxime ab libero fugit quisquam ad quae quos eligendi nisi voluptate quidem consequatur officiis! Non cumque sed, porro sint temporibus omnis.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, veritatis magnam deleniti animi eius iste doloremque laudantium illum rerum, aut omnis. Inventore nesciunt voluptate quaerat ipsa obcaecati commodi, maiores possimus!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa repellat libero ex ratione maiores facilis! Libero natus ea fuga, provident, quam blanditiis recusandae iure ad velit neque porro cum cupiditate!</p>
+    
+</body>
+</html>
